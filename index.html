@@ -359,7 +359,7 @@
 
   <script>
     // ✅ Ajusta esto a tu carpeta exportada (normalmente termina con "/")
-    const MODEL_BASE_URL = "./my_model/";
+    const MODEL_BASE_URL = new URL("./my_model/", window.location.href).toString();
 
     let model = null;
     let maxPredictions = 0;
